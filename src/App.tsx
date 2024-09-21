@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { dummyData } from './data/todos'
+import TodoItem from './components/TodoItem'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,9 +13,7 @@ function App() {
         <div className='max-w-lg mx-auto'>
           <div className='space-y-2'>
             {dummyData.map(todo => (
-              <p key={todo.id} className='text-lg'>
-                {todo.title}
-              </p>
+              <TodoItem todo={todo} />
             ))}
           </div>
         </div>
