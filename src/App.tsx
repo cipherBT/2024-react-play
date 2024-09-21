@@ -8,10 +8,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-      <main className="py-10 bg-red-50 h-screen">
+      <main className="py-10 bg-red-50 h-screen space-y-5">
         <h1 className='font-bold text-3xl text-center'>Your todos</h1>
-        <div className='max-w-lg mx-auto'>
-          <div className='space-y-2'>
+        <div className='max-w-lg mx-auto bg bg-slate-100 rounded-md p-5'>
+          <div className='space-y-3'>
             {dummyData.map(todo => (
               <TodoItem todo={todo} />
             ))}
