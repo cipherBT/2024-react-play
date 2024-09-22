@@ -1,6 +1,6 @@
 import { Todo } from "../type/todo";
 
-export const dummyData:Todo[] = [
+export const dummyData: Todo[] = [
     {
         id: 1,
         title: "like this video 👍",
